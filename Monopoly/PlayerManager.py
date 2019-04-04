@@ -8,9 +8,9 @@ from SquareClasses import *
 
 class PlayerManager:
 
-    def getPlayers(self, numPlayers, inputInterface):
+    def getPlayers(self, numPlayers, interface):
         players = []
-        names = inputInterface.getPlayerNames(numPlayers)
+        names = interface.getPlayerNames(numPlayers)
         for player in range(numPlayers):
             name = names[player]
             p = Player(name, 500, [], 0)
@@ -22,15 +22,19 @@ class PlayerManager:
             if place.position == position:
                 return place
 
-    def takeTurn(self, player, board):
+    def takeTurn(self, player, board, interface):
+        interface.startTurn(player)
         distance = 0
         goPrision = False
+        interface.rollDice()
         for roll in range(3):
             result = Dice.roll()
+            interface.showDice(result)
             distance += result[0] + result[1]
             if result[0] == result[1] and roll == 2:
                 goPrision = True
             elif result[0] == result[1]:
+                interface.rollAgain()
                 continue
             else:
                 break   
@@ -42,6 +46,16 @@ class PlayerManager:
             player.movePlayer(distance)
             propertyOn = self.propertyPlayerOn(player.position, board)
 
+        if self.checkPayRent(player, board):
+            interface.payRent()
+        else:
+            if interface.wantToBuy(propertyOn):
+                if self.playerBuy(player, board):
+                    interface.success()
+                else:
+                    interface.fail()
+            else:
+                pass
 
     def playerBuy(self, player, board):
         propertyPositionToBuy = player.position
@@ -60,7 +74,7 @@ class PlayerManager:
             return False
         
     def checkPayRent(self, player, board):
-        propertyOn = self.propertyPlayerOn(self, player.position, board)
+        propertyOn = self.propertyPlayerOn(player.position, board)
         if propertyOn.ownedBy == None:
             return False
         else:
