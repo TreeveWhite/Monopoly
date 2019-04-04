@@ -21,12 +21,13 @@ class Property(Square):
         Square.__init__(self, name, position)
         
     def prettyPrint(self):
-        print("Proterty -- {}\nPrice -- {}\nRent -- {}\nPosition -- {}\nMorgage -- {}\nBuilding Cost -- {}\n\n".format(self.name, 
+        print("Proterty -- {}\nPrice -- {}\nRent -- {}\nPosition -- {}\nMorgage -- {}\nBuilding Cost -- {}\nOwned By -- {}\n\n".format(self.name, 
                                                                                                                     self.price,
                                                                                                                     self.rent[0],
                                                                                                                     self.position,
                                                                                                                     self.morgage,
-                                                                                                                    self.buildingCost))
+                                                                                                                    self.buildingCost,
+                                                                                                                    self.ownedBy))
 
 class Utility(Square):
 
