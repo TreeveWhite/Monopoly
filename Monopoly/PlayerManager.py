@@ -4,6 +4,7 @@ File that holds the Playermanager Class.
 
 from Player import *
 from Dice import *
+from SquareClasses import *
 
 class PlayerManager:
 
@@ -40,3 +41,20 @@ class PlayerManager:
         else:
             player.movePlayer(distance)
             propertyOn = self.propertyPlayerOn(player.position, board)
+
+
+    def playerBuy(self, player, board):
+        propertyPositionToBuy = player.position
+        propertyClass = self.propertyPlayerOn(propertyPositionToBuy, board)
+        """
+        print(propertyPositionToBuy)
+        print(propertyClass.name)"""
+
+        if player.money >= propertyClass.price:
+            propertyClass.ownedBy = player
+            player.money -= propertyClass.price
+            player.properties.append(propertyClass)
+            #propertyClass.prettyPrint()
+            return True
+        else:
+            return False
