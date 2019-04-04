@@ -58,3 +58,11 @@ class PlayerManager:
             return True
         else:
             return False
+        
+    def checkPayRent(self, player, board):
+        propertyOn = self.propertyPlayerOn(self, player.position, board)
+        if propertyOn.ownedBy == None:
+            return False
+        else:
+            player.money -= propertyOn.rent
+            return True
