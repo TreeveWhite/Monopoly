@@ -1,3 +1,7 @@
+"""
+Unit Test for AnaliseCard.py
+"""
+
 import unittest
 from AnalyseCard import AnaliseChance
 
