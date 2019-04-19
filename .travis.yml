@@ -1,8 +1,11 @@
 language: python
+
 python:
   - "3.6"
+  
 before_install:
   - cd Monopoly
+  
 script: 
   - python test_AnalyseCard.py
   - python test_PlayerManager.py
