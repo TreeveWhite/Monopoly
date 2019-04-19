@@ -1,5 +1,5 @@
 # NAMESPACEING
-Monopoly game using a Text Interface. (How to playout code)
+Monopoly game using a Text Interface. (How to layout code)
 
 
   * NO underscores (_)
