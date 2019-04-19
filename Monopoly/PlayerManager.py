@@ -62,6 +62,8 @@ class PlayerManager:
             return None
         elif propertyOn.name == "Go":
             return None
+        elif propertyOn.name == "Free Parking":
+            return None
         elif propertyOn.name == "Go To Jail":
             self.sendToPrison(player, interface, board)
             return None
