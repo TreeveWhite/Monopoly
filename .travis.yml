@@ -5,3 +5,6 @@ before_install:
   - cd Monopoly
 script: 
   - python test_AnalyseCard.py
+  - python test_PlayerManager.py
+  - python test_BoardManager.py
+  - python test_Dice.py
