@@ -86,9 +86,9 @@
     }
 ,
     {
-        "__class__": "Prison",
+        "__class__": "Jail",
         "__module__": "SquareClasses",
-        "name": "Prison",
+        "name": "Jail",
         "position": 6
     }
 ,
