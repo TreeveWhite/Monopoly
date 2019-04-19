@@ -1,5 +1,5 @@
 # Monopoly
-[![Build Status](https://travis-ci.com/TreeveWhite/Monopoly.svg?token=1A2ABBnTpp4VEa8jqqBw&branch=master)](https://travis-ci.com/TreeveWhite/Monopoly)
+[![Build Status](https://travis-ci.org/TreeveWhite/Monopoly.svg?branch=master)](https://travis-ci.org/TreeveWhite/Monopoly)
 
 Monopoly game using a Text Interface.
 
