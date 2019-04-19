@@ -45,10 +45,10 @@ class GoSquare(Square):
     def prettyPrint(self):
         print("GO SQUARE\nGAIN £200 WHEN CROSSED\n\n")
 
-class Prison(Square):
-
+class Jail:
+    
     def __init__(self, name, position):
-        self.name = "Prison"
+        self.name = "Jail"
         self.prisoners = {}
         self.position = position
 
