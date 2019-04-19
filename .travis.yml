@@ -1,6 +1,5 @@
 language: python
 python:
   - "3.6"
-install:
-  - pip install -r requirements.txt
-scripts: unittest
+script: 
+  - python test_AnaliseCard.py
