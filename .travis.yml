@@ -1,1 +1,3 @@
 language: python
+scripts:
+  - python test_AnalyseCards.py
