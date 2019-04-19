@@ -26,5 +26,5 @@ if __name__ == "__main__":
     while boardManager.gameWon != True:
         for player in players:
             playerManager.takeTurn(player, board, currentInterface)
-            currentInterface.showDetails(player)
+            currentInterface.showDetails(player, board)
         

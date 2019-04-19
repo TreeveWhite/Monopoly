@@ -17,11 +17,11 @@ class TextInterface:
             playersNames.append(input("Enter Player {} Name:    ".format(player+1)))
         return playersNames
     
-    def showDetails(self, player):
+    def showDetails(self, player, board):
         p = []
         for prop in player.properties:
             p.append(prop.name)
-        print("{} has £{}\nProperties: {}\nPosition: {}".format(player.name, player.money, p, player.position))
+        print("{} has £{}\nProperties: {}\nPosition: {}".format(player.name, player.money, p, board[player.position].name))
     
     def wantToBuy(self, propertyGiven):
         choice = input("Do You wish to buy {} for £{}? Y/N".format(propertyGiven.name, propertyGiven.price)).lower()
