@@ -23,7 +23,8 @@ if __name__ == "__main__":
     players = playerManager.getPlayers(numberPlayers, currentInterface)
 
     #Play game
-    for player in players:
-        playerManager.takeTurn(player, board)
-        currentInterface.showDetails(player)
+    while boardManager.gameWon != True:
+        for player in players:
+            playerManager.takeTurn(player, board, currentInterface)
+            currentInterface.showDetails(player)
         

@@ -5,11 +5,11 @@
         "name": "Go",
         "position": 0
     }
-,
+    ,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
-        "name": "Mediterranean Avenue",
+        "name": "Africa Avenue",
         "position": 1,
         "price": 60,
         "rent": [
@@ -27,8 +27,33 @@
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
-        "name": "Baltic Avenue",
+        "name": "Mediterranean Avenue",
         "position": 2,
+        "price": 60,
+        "rent": [
+            4,
+            10,
+            30,
+            90,
+            160,
+            250
+        ],
+        "morgage": 30,
+        "buildingCost": 50
+    }
+,
+    {
+        "__class__": "ChanceCard",
+        "__module__": "SquareClasses",
+        "name": "Chance Card",
+        "position": 3
+    }
+,
+    {
+        "__class__": "Property",
+        "__module__": "SquareClasses",
+        "name": "Baltic Avenue",
+        "position": 4,
         "price": 60,
         "rent": [
             8,
@@ -41,12 +66,12 @@
         "morgage": 30,
         "buildingCost": 50
     }
-    ,
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Oriental Avenue",
-        "position": 3,
+        "position": 5,
         "price": 100,
         "rent": [
             12,
@@ -59,12 +84,19 @@
         "morgage": 50,
         "buildingCost": 50
     }
-    ,
+,
+    {
+        "__class__": "Prison",
+        "__module__": "SquareClasses",
+        "name": "Prison",
+        "position": 6
+    }
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Vermont Avenue",
-        "position": 4,
+        "position": 7,
         "price": 100,
         "rent": [
             12,
@@ -77,12 +109,37 @@
         "morgage": 50,
         "buildingCost": 50
     }
-    ,
+,
+    {
+        "__class__": "Property",
+        "__module__": "SquareClasses",
+        "name": "Vermont Avenue",
+        "position": 8,
+        "price": 110,
+        "rent": [
+            12,
+            30,
+            90,
+            270,
+            400,
+            550
+        ],
+        "morgage": 50,
+        "buildingCost": 50
+    }
+,
+    {
+        "__class__": "ComunityChest",
+        "__module__": "SquareClasses",
+        "name": "Comunity Chest",
+        "position": 9
+    }
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Connecticut Avenue",
-        "position": 5,
+        "position": 10,
         "price": 120,
         "rent": [
             16,
@@ -95,12 +152,12 @@
         "morgage": 60,
         "buildingCost": 50
     }
-    ,
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "St. Charles Place",
-        "position": 6,
+        "position": 11,
         "price": 120,
         "rent": [
             20,
@@ -113,12 +170,19 @@
         "morgage": 70,
         "buildingCost": 100
     }
-    ,
+,
+    {
+        "__class__": "FreeParking",
+        "__module__": "SquareClasses",
+        "name": "Free Parking",
+        "position": 12
+    }
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "States Avenue",
-        "position": 7,
+        "position": 13,
         "price": 120,
         "rent": [
             20,
@@ -131,12 +195,12 @@
         "morgage": 70,
         "buildingCost": 100
     }
-    ,
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Northumberland Avenue",
-        "position": 8,
+        "position": 14,
         "price": 160,
         "rent": [
             24,
@@ -149,12 +213,19 @@
         "morgage": 80,
         "buildingCost": 100
     }
-    ,
+,
+    {
+        "__class__": "ChanceCard",
+        "__module__": "SquareClasses",
+        "name": "Chance Card",
+        "position": 15
+    }
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Bow Street",
-        "position": 9,
+        "position": 16,
         "price": 160,
         "rent": [
             28,
@@ -167,12 +238,12 @@
         "morgage": 90,
         "buildingCost": 100
     }
-    ,
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Marlbough Street",
-        "position": 10,
+        "position": 17,
         "price": 160,
         "rent": [
             28,
@@ -185,12 +256,19 @@
         "morgage": 90,
         "buildingCost": 100
     }
-    ,
+,
+    {
+        "__class__": "GoToJail",
+        "__module__": "SquareClasses",
+        "name": "Go To Jail",
+        "position": 18
+    }
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Vine Street",
-        "position": 11,
+        "position": 19,
         "price": 200,
         "rent": [
             32,
@@ -203,12 +281,12 @@
         "morgage": 100,
         "buildingCost": 100
     }
-    ,
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "The Strand",
-        "position": 12,
+        "position": 20,
         "price": 220,
         "rent": [
             36,
@@ -221,12 +299,19 @@
         "morgage": 110,
         "buildingCost": 150
     }
-    ,
+,
+    {
+        "__class__": "ComunityChest",
+        "__module__": "SquareClasses",
+        "name": "Comunity Chest",
+        "position": 21
+    }
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Fleet Streat",
-        "position": 13,
+        "position": 22,
         "price": 220,
         "rent": [
             36,
@@ -239,12 +324,12 @@
         "morgage": 110,
         "buildingCost": 150
     }
-    ,
+,
     {
         "__class__": "Property",
         "__module__": "SquareClasses",
         "name": "Trafalga Square",
-        "position": 14,
+        "position": 23,
         "price": 240,
         "rent": [
             40,
@@ -256,5 +341,23 @@
         ],
         "morgage": 120,
         "buildingCost": 150
+    }
+    ,
+    {
+        "__class__": "Property",
+        "__module__": "SquareClasses",
+        "name": "Buckingham Palace",
+        "position":24,
+        "price": 300,
+        "rent": [
+            50,
+            110,
+            320,
+            800,
+            925,
+            1200
+        ],
+        "morgage": 150,
+        "buildingCost": 200
     }
 ]
