@@ -4,4 +4,3 @@ python:
 install:
   - pip install -r requirements.txt
 scripts: unittest
-  - python test_AnaliseCard.py
