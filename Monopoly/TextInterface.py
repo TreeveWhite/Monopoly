@@ -5,7 +5,7 @@ File thats holds the class which controlls all text inputs for the monopoly game
 class TextInterface:
 
     def showWelcome(self):
-        print("Welcome to Monopoly\nThis game took me FUCKING ages to make so please be kind\nYou start with £500")
+        print("Welcome to Monopoly\nThis game took me ages to make so please be kind\nYou start with £500")
 
     def getNumPlayers(self):
         numPlayers = int(input("How many Players?"))
