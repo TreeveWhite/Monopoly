@@ -2,4 +2,4 @@ language: python
 python:
   - "3.6"
 script: 
-  - python /Monopoly/test_AnalyseCard.py
+  - python Monopoly/Monopoly/test_AnalyseCard.py
