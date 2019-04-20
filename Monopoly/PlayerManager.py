@@ -47,37 +47,35 @@ class PlayerManager:
                 
         if threeDouble:
             self.sendToPrison(player, interface, board)
-            return None
         else:
             player.movePlayer(distance)
             propertyOn = self.propertyPlayerOn(player.position, board)
-        if propertyOn.name == "Chance Card":
-            card = propertyOn.getCard()
-            interface.showCard(card)
-            AnaliseChance.Analise(card, player)
-            return None
-        elif propertyOn.name == "Comunity Chest":
-            return None
-        elif propertyOn.name == "Jail":
-            return None
-        elif propertyOn.name == "Go":
-            return None
-        elif propertyOn.name == "Free Parking":
-            return None
-        elif propertyOn.name == "Go To Jail":
-            self.sendToPrison(player, interface, board)
-            return None
 
-        if self.checkPayRent(player, board):
-            interface.payRent(propertyOn)
-        else:
-            if interface.wantToBuy(propertyOn):
-                if self.playerBuy(player, board):
-                    interface.success()
-                else:
-                    interface.fail()
-            else:
+            if propertyOn.name == "Chance Card":
+                card = propertyOn.getCard()
+                interface.showCard(card)
+                AnaliseChance.Analise(card, player)
+            elif propertyOn.name == "Comunity Chest":
                 pass
+            elif propertyOn.name == "Jail":
+                pass
+            elif propertyOn.name == "Go":
+                pass
+            elif propertyOn.name == "Free Parking":
+                pass
+            elif propertyOn.name == "Go To Jail":
+                self.sendToPrison(player, interface, board)
+            else:
+                if self.checkPayRent(player, board):
+                    interface.payRent(propertyOn)
+                else:
+                    if interface.wantToBuy(propertyOn):
+                        if self.playerBuy(player, board):
+                            interface.success()
+                        else:
+                            interface.fail()
+                    else:
+                        pass
 
     def playerBuy(self, player, board):
         propertyPositionToBuy = player.position
