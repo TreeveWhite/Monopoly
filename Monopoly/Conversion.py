@@ -15,6 +15,4 @@ class Conversions:
             obj = class_(**dict1)
         else:
             obj = dict1
-        
-        print(obj)
         return obj
