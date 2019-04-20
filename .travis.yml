@@ -11,3 +11,4 @@ script:
   - python test_PlayerManager.py
   - python test_BoardManager.py
   - python test_Dice.py
+  - python test_Conversion.py
