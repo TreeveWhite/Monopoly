@@ -94,14 +94,14 @@ class PlayerManager:
         if propertyOn.ownedBy == None:
             return False
         elif propertyOn.ownedBy == player:
-            return True
+            return False
         else:
             player.money -= propertyOn.rent[propertyOn.numHouses]
             propertyOn.ownedBy.money += propertyOn.rent[propertyOn.numHouses]
             return True
     
     def buyHouse(self, player, board, interface):
-        interface.wnatToBuyHouses()
+        interface.wantToBuyHouses()
         propertyOn = self.propertyPlayerOn(player.position, board)
         if propertyOn.numHouses != 5:
             numHouses = interface.howManyHouses()
