@@ -8,6 +8,8 @@ Simple Monopoly game currently using a text interface rather than gui however ea
 from a TextInterface to Ui Interface.
 
 ### Installing
-> Will weed a working verion of Python 3
+> Will need a working verion of Python 3
+>>
+> Will need unittest module if wish to run the Unit Tests
 
 Create a clone of the repositary and run the code from the file "Monopoly Main.py".
