@@ -2,7 +2,7 @@
 ### Build Staus
 
 [![Build Status](https://travis-ci.org/TreeveWhite/Monopoly.svg?branch=master)](https://travis-ci.org/TreeveWhite/Monopoly)
-
+![APM](https://img.shields.io/apm/l/vim-mode.svg)
 ### Description
 Simple Monopoly game currently using a text interface rather than gui however easy to install gui in the future by changing current interface
 from a TextInterface to Ui Interface.
