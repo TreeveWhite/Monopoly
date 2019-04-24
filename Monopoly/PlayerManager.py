@@ -54,7 +54,8 @@ class PlayerManager:
             if propertyOn.name == "Chance Card":
                 card = propertyOn.getCard()
                 interface.showCard(card)
-                AnaliseChance.Analise(card, player)
+                amount = AnaliseChance.Analise(card)
+                AnaliseChance.doCardAction(player, amount)
             elif propertyOn.name == "Comunity Chest":
                 pass
             elif propertyOn.name == "Jail":

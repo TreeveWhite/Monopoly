@@ -4,7 +4,7 @@ Program to analise contents of a chnace or community card and retrun instruction
 
 class AnaliseChance:
 
-    def Analise(card, player):
+    def Analise(card):
         amount = ""
         cardSplit = card.split()
         cardArray = list(cardSplit)
@@ -12,9 +12,11 @@ class AnaliseChance:
             for letter in word:
                 if str.isdigit(letter):
                     amount += str(letter)
-
         if "win" in cardArray:
-            player.money += int(amount)
+            money = int(amount)
         elif "lose" in cardArray:
-            player.money -= int(amount)
-        return player.money
+            money = int(amount) * -1
+        return money
+
+    def doCardAction(self, player, amount):
+        player.money += int(amount)
