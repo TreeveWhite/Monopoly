@@ -18,8 +18,8 @@ class MyTest(unittest.TestCase):
         
         player = Player()
 
-        self.assertEqual(AnaliseChance.doCardAction(player, 50), 50)
-        self.assertEqual(AnaliseChance.doCardAction(player, -50), 0)
+        self.assertEqual(AnaliseChance.doCardAction(player, "50").money, 50)
+        self.assertEqual(AnaliseChance.doCardAction(player, "-50").money, 0)
 
 
 if __name__ == "__main__":

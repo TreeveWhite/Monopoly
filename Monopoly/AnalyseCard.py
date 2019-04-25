@@ -18,5 +18,7 @@ class AnaliseChance:
             money = int(amount) * -1
         return money
 
-    def doCardAction(self, player, amount):
+    def doCardAction(player, amount):
         player.money += int(amount)
+        return player
+        
