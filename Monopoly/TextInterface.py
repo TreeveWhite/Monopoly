@@ -21,7 +21,7 @@ class TextInterface:
         p = []
         for prop in player.properties:
             p.append(prop.name)
-        print("{} has £{}\nProperties: {}\nPosition: {}".format(player.name, player.money, p, board[player.position].name))
+        print("\n{} has £{}\nProperties: {}\nPosition: {}\n".format(player.name, player.money, p, board[player.position].name))
     
     def wantToBuy(self, propertyGiven):
         choice = input("Do You wish to buy {} for £{}? Y/N".format(propertyGiven.name, propertyGiven.price)).lower()
@@ -72,3 +72,6 @@ class TextInterface:
     
     def showCard(self, card):
         print(card)
+
+    def currentPosition(self, position):
+        print("\nYou are on {}".format(position))
