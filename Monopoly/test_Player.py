@@ -7,9 +7,10 @@ from Player import Player
 
 class MyTest(unittest.TestCase):
     def test_movePlayer(self):
+        board = ["", "", "", "", "", "", "", "", "", "", "", ""]
         player1 = Player("player1", 1000, [], 0)
 
-        player1.movePlayer(9)
+        player1.movePlayer(9, board)
         self.assertEqual(player1.position, 9)
     
     def test_playerPassGo(self):
