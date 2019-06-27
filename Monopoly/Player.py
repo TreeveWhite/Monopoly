@@ -10,8 +10,9 @@ class Player:
         self.properties = properties
         self.position = position
 
-    def movePlayer(self, distance):
-        self.position += distance
+    def movePlayer(self, distance, board):
+        newDist = (self.position + distance) % len(board)
+        self.position = newDist
     
     def playerPassGo(self):
         self.money += 200
