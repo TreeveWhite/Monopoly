@@ -27,7 +27,6 @@ class PlayerManager:
         interface.startTurn(player)
         distance = 0
         threeDouble = False
-
         if self.playerInPrison(player, board):
             interface.inPrison(self.propertyPlayerOn(player.position, board), player)
             return None
@@ -48,8 +47,10 @@ class PlayerManager:
         if threeDouble:
             self.sendToPrison(player, interface, board)
         else:
-            player.movePlayer(distance)
+            player.movePlayer(distance, board)
             propertyOn = self.propertyPlayerOn(player.position, board)
+
+            interface.currentPosition(propertyOn.name)
 
             if propertyOn.name == "Chance Card":
                 card = propertyOn.getCard()
@@ -120,9 +121,9 @@ class PlayerManager:
         interface.inPrison(self.propertyPlayerOn(player.position, board), player)
     
     def playerInPrison(self, player, board):
-        if self.propertyPlayerOn(player.position, board).name == "Prison":
+        if self.propertyPlayerOn(player.position, board).name == "Jail":
             self.propertyPlayerOn(player.position, board).prisoners[player] -= 1
-            if self.propertyPlayerOn(player.position, board).prisoners[player] <= 0:
+            if self.propertyPlayerOn(player.position, board).prisoners[player] == 0:
                 return False
             else:
                 return True
